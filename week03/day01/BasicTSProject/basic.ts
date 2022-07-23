@@ -1,26 +1,14 @@
-export {}
+export { }
 
-let message = "Yo bro!";
-console.log(message);
+{
+    const i1: number = 10;
+    const i2: number = 4;
 
-let x : number;
-x = 5;
+    let firstCondition: boolean = i1 > Math.pow(i2, 2);
+    let secondCondition: boolean = i1 < Math.pow(i2, 3);
 
-const y : number = 10;
-// y = 15; - error
+    console.log(firstCondition);
+    console.log(secondCondition);
 
-let isBeginner: boolean = true;
-let name: string = 'Attila';
-let intro: string = `My name is ${name} and im a beginner`;
-
-console.log(intro);
-
-// interface String {
-//     toJadenCase(): string;
-// }
-
-// String.prototype.toJadenCase = function () {
-//     return this.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
-// };
-
-
+    console.log(firstCondition && secondCondition);
+}
